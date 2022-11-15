@@ -24,6 +24,17 @@ async def help_cmd(client‚message):
 async def settings_cmd(client‚message):
     print("SETTINGS Command")
 
+@MALLU_FILTER.on_message(filters.command("connect"))
+async def connect_cmd(client‚message):
+    print("CONNECT Command")
+
+@MALLU_FILTER.on_message(filters.command("filter"))
+async def filter_cmd(client‚message):
+    print("FILTER Command")
+
+
+
+
 
 print("Bot Started")
 
