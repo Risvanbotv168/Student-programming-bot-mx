@@ -11,6 +11,20 @@ MALLU_FILTER = Client(
    bot_token=BOT_TOKEN‚
 )
 
+@MALLU_FILTER.on_message(filters.command("start"))
+async def start_cmd(client‚message):
+    print("START Command")
+
+
+@MALLU_FILTER.on_message(filters.command("help"))
+async def help_cmd(client‚message):
+    print("HELP Command")
+
+@MALLU_FILTER.on_message(filters.command("settings"))
+async def settings_cmd(client‚message):
+    print("SETTINGS Command")
+
+
 print("Bot Started")
 
 MALLU_FILTER.run()
